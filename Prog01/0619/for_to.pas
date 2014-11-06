@@ -1,0 +1,6 @@
+program for_to;
+var n: integer;
+begin
+	for n := 1 to 3 do
+	writeln('「to」を使った　for文の例 n=',n);
+end.

@@ -1,0 +1,13 @@
+program test;
+var
+	age,incom : integer;
+begin
+	writeln('年齢を入れてください:');
+	readln(age);
+	writeln('年収を入れてください:');
+	readln(incom);
+	if ((age > 40) and (incom > 500)) then
+		writeln('該当します')
+	else
+		writeln('該当しません');
+end.

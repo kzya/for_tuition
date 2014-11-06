@@ -1,0 +1,10 @@
+program while_do;
+var n: integer;
+begin
+	n := 1;
+	wrile n < 4 do
+		begin
+		writeln('while文の例 n=',n);
+		n := n + 1;
+		end;
+end.
