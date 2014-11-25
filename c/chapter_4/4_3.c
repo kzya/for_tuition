@@ -1,24 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main (void)
+int main(void)
 {
-    int num, temp;
-    int dig;
-
-    do {
-        printf("please non-negative number");
-        scanf("%d", &num);
-        if (num < 0)
-            puts("do not enter Negative number");
-    } while (num < 0);
-
-    temp = num;
-    dig  = 0;
-
-    do {
-        temp = temp/10;
-        dig  = dig+1;
-    } while (temp>0);
-    printf("%dis%ddigit",num,dig);
-
+	int num,temp;
+	int dig;
+	
+	do{
+		printf("非負の整数を入力してください：");
+		scanf("%d",&num);
+		if(num < 0)
+			puts("\a負の数を入力しないでください。");
+	}while(num < 0);
+	
+	temp = num;
+	dig = 0;
+	
+	do{
+		temp = temp/10;
+		dig = dig + 1;
+	}while(temp > 0);
+	printf("%dは%d桁です。\n",num,dig);
+	
+	return(0);
 }
