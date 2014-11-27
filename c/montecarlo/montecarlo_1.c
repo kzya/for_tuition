@@ -12,15 +12,17 @@ int main(void){
     for(i=0; i<NUMPOINTS; i++){
         x = unitrand();
         y = unitrand();
-        //生成した乱数が積分領域内の時にカウンタインクリメント
+        //Counter increment the generated random number when the integration area
         if(x>y){
             count++;
         }
     }
-    printf("x=yの面積は%f\n",(double)count/NUMPOINTS);
+    printf("x=y area of%f\n",(double)count/NUMPOINTS);
     return(0);
 }
 
 double unitrand(){
+    //Returns the value obtained by dibiding the maximum
+    //value of the random number
     return((double)rand()/RAND_MAX);
 }
