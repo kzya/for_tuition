@@ -1,5 +1,4 @@
-//2E-21 長友和也
-//montekaruro3
+//montecarlo3
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
